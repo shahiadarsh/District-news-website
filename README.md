@@ -184,7 +184,7 @@ Example `.env` file:
 ```env
 MONGO_URI=mongodb://localhost:27017/news_app
 JWT_SECRET=your_jwt_secret
-ADMIN_EMAIL=shivam
+ADMIN_EMAIL=Adarsh
 ADMIN_PASSWORD=11111
 ```
 
@@ -242,6 +242,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## **Contact** 📧
 
-- **Name:** Shivam Kumar Pathak
-- **Email:** shivampathak0123456@gmail.com
-- **LinkedIn:** [Shivam Pathak](https://www.linkedin.com/in/shivam-pathak-2244a0230/)
+- **Name:** Adarsh shahi  
+- **Email:** shahiadarsh76765@gmail.com
+- **LinkedIn:** [Adarsh Shahi]([https://www.linkedin.com/in/adarsh-shahi-640976233])
