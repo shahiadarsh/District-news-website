@@ -10,7 +10,7 @@ import AdminLogin from './pages/AdminLogin';
 import FullNewsPage from './pages/FullNewsPage';
 import { ThemeProvider, useTheme } from './ThemeContext';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://district-news-backend.onrender.com/api';
 
 function AppContent() {
   const [news, setNews] = useState([]);
