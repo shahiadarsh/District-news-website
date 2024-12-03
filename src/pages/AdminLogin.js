@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
+import api from '../api'; // Axios instance with `withCredentials: true`
 
 const AdminLogin = ({ setIsAdmin }) => {
   const [username, setUsername] = useState('');
@@ -9,12 +10,17 @@ const AdminLogin = ({ setIsAdmin }) => {
   const navigate = useNavigate();
   const { darkMode } = useTheme();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (username === 'shivam' && password === '11111') {
+    try {
+      // Make POST request to login
+      await api.post('/admin/login', { username, password });
+      // On successful login, set `isAdmin` to true
       setIsAdmin(true);
+      // Redirect to the catalog page
       navigate('/catalog');
-    } else {
+    } catch (error) {
+      // Handle error
       setError('Invalid username or password');
     }
   };
