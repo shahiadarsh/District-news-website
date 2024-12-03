@@ -1,18 +1,12 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Detect user's preferred color scheme
-  useEffect(() => {
-    const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    setDarkMode(userPrefersDark);
-  }, []);
-
   const toggleTheme = () => {
-    setDarkMode(prevMode => !prevMode);
+    setDarkMode(!darkMode);
   };
 
   return (
