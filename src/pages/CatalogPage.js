@@ -144,7 +144,9 @@ const CatalogPage = ({
             </div>
           )}
         </div>
+      </div>
 
+      <div className="grid gap-8 lg:grid-cols-2">
         <div className="mb-8">
           <ToggleFormButton
             onClick={() => setShowEditAds(!showEditAds)}
@@ -165,6 +167,7 @@ const CatalogPage = ({
             </div>
           )}
         </div>
+        
       </div>
     </motion.div>
   );
