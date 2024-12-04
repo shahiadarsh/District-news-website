@@ -109,7 +109,7 @@ const Header = ({ isAdmin, setIsAdmin }) => {
             transition={{ duration: 0.3 }}
             className={`lg:hidden ${darkMode ? "bg-gray-700" : "bg-blue-500"}`}
           >
-            <ul className="container mx-auto px-4 py-2 space-y-2">
+            <ul className="container mx-auto px-4 py-2 space-y-2 ">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <Link
@@ -154,7 +154,7 @@ const Header = ({ isAdmin, setIsAdmin }) => {
         )}
       </AnimatePresence>
       <nav className="hidden lg:block">
-        <ul className="container mx-auto px-4 py-2 flex space-x-4 mb-1">
+        <ul className="container mx-auto px-4 py-2 flex justify-evenly space-x-4 mb-1">
           {navItems.map((item) => (
             <li key={item.name}>
               <Link
@@ -184,7 +184,7 @@ const Header = ({ isAdmin, setIsAdmin }) => {
               <li>
                 <button
                   onClick={handleLogout}
-                  className="py-2 px-4 rounded bg-red-500 text-white hover:bg-red-600"
+                  className="flex text-[14px] py-1 px-2 rounded bg-red-500 text-white hover:bg-red-600"
                 >
                   Logout
                 </button>
