@@ -81,7 +81,7 @@ const Header = ({ isAdmin, setIsAdmin }) => {
             className="h-8 md:h-10 lg:h-12 w-auto rounded-full"
             alt="Siddharthnagar News Logo"
           />
-          <span className="">Siddharthnagar Times 24</span>
+          <span className="">Gorakhpur Times 24</span>
         </Link>
 
         <div className="flex items-center">
