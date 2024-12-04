@@ -1,4 +1,4 @@
 
-const blocks = ['Kapilvastu', 'Dumariyaganj', 'Shorathgarh', 'Bansi', 'Itwa', 'Nepal'];
+const blocks = ['Gorakhpur', 'Maharajganj', 'Basti', 'Lucknow', 'Gonda', 'Barabanki'];
 
 export default blocks;
