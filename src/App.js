@@ -154,7 +154,7 @@ function AppContent() {
     >
       <Helmet>
         <meta name="description" content="Siddharthnagar News and Updates" />
-        <title>Siddharthnagar Times 24</title>
+        <title>Gorakhpur Times 24</title>
       </Helmet>
       <Header isAdmin={isAdmin} setIsAdmin={setIsAdmin} />
       <main className="flex-grow mx-2 sm:mx-6 md:mx-8 lg:mx-12 px-4 py-8">
