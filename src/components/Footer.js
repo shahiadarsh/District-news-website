@@ -55,7 +55,7 @@ const Footer = () => {
                   : 'bg-green-500 hover:bg-green-600'
               } text-white px-4 py-2 rounded inline-block transition duration-200`}
             >
-              WhatsApp: 9569729522
+              WhatsApp: 6393251773
             </a>
           </div>
         </div>
